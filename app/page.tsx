@@ -12,7 +12,7 @@ export default function Home() {
   return <main>
     <header className="nav-shell">
       <a className="brand" href="#top" aria-label="Swarm and Bee home"><span className="brand-mark">S<span>&amp;</span>B</span><span>swarm <i>&amp;</i> bee</span></a>
-      <nav aria-label="Primary navigation"><a href="#mri">MRI</a><a href="#systems">Systems</a><a href="#doctrine">Doctrine</a></nav>
+      <nav aria-label="Primary navigation"><a href="/swarmmed-ai">SwarmMed AI</a><a href="#systems">Systems</a><a href="#doctrine">Doctrine</a></nav>
       <a className="nav-cta" href="mailto:build@swarmandbee.ai">Start a build <ArrowUpRight size={15}/></a>
     </header>
     <section className="hero" id="top">
