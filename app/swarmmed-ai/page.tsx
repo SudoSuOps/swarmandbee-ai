@@ -4,8 +4,27 @@ import Link from "next/link";
 import { ArrowLeft, ArrowUpRight, Check, Cpu, Database, Network, ScanLine, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "SwarmMed AI — Local MRI Intelligence",
-  description: "SwarmMed AI brings private MRI intelligence to the edge, powered by local NVIDIA Blackwell compute.",
+  title: "SwarmMed AI | Private MRI Workflow Intelligence",
+  description: "SwarmMed AI brings private MRI workflow intelligence to local edge systems, backed by NVIDIA Blackwell compute and designed for clinician review.",
+  alternates: { canonical: "/swarmmed-ai" },
+  openGraph: {
+    type: "website",
+    url: "https://swarmandbee.ai/swarmmed-ai",
+    title: "SwarmMed AI | Private MRI Workflow Intelligence",
+    description: "Local edge inference for private MRI workflows, backed by NVIDIA Blackwell compute and designed for clinician review.",
+  },
+};
+
+const swarmMedSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://swarmandbee.ai/swarmmed-ai#software",
+  name: "SwarmMed AI",
+  applicationCategory: "MedicalApplication",
+  operatingSystem: "Local edge infrastructure",
+  url: "https://swarmandbee.ai/swarmmed-ai",
+  description: "Private medical-imaging workflow support designed to run locally at the edge with clinician review.",
+  author: { "@id": "https://swarmandbee.ai/#organization" },
 };
 
 const stages = [
@@ -15,7 +34,7 @@ const stages = [
 ];
 
 export default function SwarmMedAI() {
-  return <main className="med-page">
+  return <main className="med-page"><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(swarmMedSchema)}}/>
     <header className="med-nav">
       <Link href="/" className="med-brand"><span className="brand-mark">S<span>&amp;</span>B</span><span>swarm <i>&amp;</i> bee</span></Link>
       <span className="med-product">SWARMMED AI</span>
@@ -61,7 +80,7 @@ export default function SwarmMedAI() {
       </article>
     </section>
 
-    <section className="med-cta"><p className="eyebrow"><span/> Bring intelligence closer</p><h2>Private by design.<br/><em>Powerful by build.</em></h2><a href="mailto:build@swarmandbee.ai">Build with SwarmMed AI <ArrowUpRight/></a></section>
-    <footer className="med-footer"><span>© 2026 SWARM &amp; BEE</span><span>SWARMMED AI · RESEARCH &amp; WORKFLOW SUPPORT</span><span>BUILD@SWARMANDBEE.AI</span></footer>
+    <section className="med-cta"><p className="eyebrow"><span/> Bring intelligence closer</p><h2>Private by design.<br/><em>Powerful by build.</em></h2><a href="mailto:build@swarmandbee.ai">Build with SwarmMed AI <ArrowUpRight/></a><a href="tel:+15615327120" aria-label="Call Swarm and Bee at 561-532-7120">561.532.7120</a></section>
+    <footer className="med-footer"><span>© 2026 SWARM &amp; BEE</span><span>SWARMMED AI · RESEARCH &amp; WORKFLOW SUPPORT</span><a href="tel:+15615327120">561.532.7120</a></footer>
   </main>;
 }

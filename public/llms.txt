@@ -1,0 +1,26 @@
+# Swarm & Bee
+
+> Swarm & Bee builds sovereign AI infrastructure that runs where customer data lives.
+
+Canonical site: https://swarmandbee.ai/
+Business phone: +1-561-532-7120
+Business email: build@swarmandbee.ai
+Location: Jupiter, Florida, United States
+Hugging Face: https://huggingface.co/SwarmandBee
+
+## Primary capabilities
+
+- SwarmMed AI: private medical-imaging workflow support for local edge deployment and clinician review.
+- Edge AI appliances: integrated GPU compute, local storage, networking, and private inference.
+- AI hosting: high-memory NVIDIA Blackwell infrastructure for controlled inference and model workloads.
+- Sovereign data systems: local-first architecture designed to minimize unnecessary data transit.
+- Verifiable execution: model, node, timing, input fingerprint, and output hash can form a cryptographic job receipt.
+
+## Important product boundaries
+
+SwarmMed AI is presented for research and workflow support. It is not presented as an autonomous diagnosis system or a medical device. Qualified clinicians remain responsible for medical interpretation and decisions.
+
+## Key pages
+
+- Home: https://swarmandbee.ai/
+- SwarmMed AI: https://swarmandbee.ai/swarmmed-ai

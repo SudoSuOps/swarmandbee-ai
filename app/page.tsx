@@ -13,15 +13,15 @@ export default function Home() {
     <header className="nav-shell">
       <a className="brand" href="#top" aria-label="Swarm and Bee home"><span className="brand-mark">S<span>&amp;</span>B</span><span>swarm <i>&amp;</i> bee</span></a>
       <nav aria-label="Primary navigation"><a href="/swarmmed-ai">SwarmMed AI</a><a href="#systems">Systems</a><a href="#doctrine">Doctrine</a></nav>
-      <a className="nav-cta" href="mailto:build@swarmandbee.ai">Start a build <ArrowUpRight size={15}/></a>
+      <a className="nav-cta" href="tel:+15615327120" aria-label="Call Swarm and Bee at 561-532-7120">561.532.7120 <ArrowUpRight size={15}/></a>
     </header>
     <section className="hero" id="top">
       <Image src="/mri-hero.png" alt="Abstract, non-diagnostic MRI scan with compute signal overlays" fill priority sizes="100vw" className="hero-image" />
       <div className="hero-shade"/><div className="hero-grid" aria-hidden="true"/>
       <div className="hero-copy">
         <p className="eyebrow"><span/> Jupiter, Florida · Local AI infrastructure</p>
-        <h1>Intelligence<br/>close to <em>the data.</em></h1>
-        <p className="hero-lede">Swarm &amp; Bee builds private AI infrastructure—from medical imaging to GPU compute to edge systems.</p>
+        <h1>Sovereign intelligence.<br/><em>Running where your data lives.</em></h1>
+        <p className="hero-lede">Swarm &amp; Bee builds trusted local AI infrastructure—from medical imaging and NVIDIA Blackwell compute to edge systems and verifiable inference.</p>
         <div className="hero-actions"><a className="button-primary" href="mailto:build@swarmandbee.ai">Talk to Swarm &amp; Bee <ArrowUpRight size={18}/></a><a className="text-link" href="#mri">Explore the system <ArrowDownRight size={17}/></a></div>
       </div>
       <div className="hero-status" aria-label="Infrastructure status"><span className="status-dot"/><div><small>PRIVATE INFRASTRUCTURE</small><strong>EDGE / GPU / STORAGE</strong></div><div><small>OPERATING PRINCIPLE</small><strong>LOCAL FIRST</strong></div></div>
@@ -34,8 +34,8 @@ export default function Home() {
     </section>
     <section className="systems-section" id="systems"><div className="section-kicker light"><span>02</span> One infrastructure thesis</div><div className="systems-head"><h2>Built as one system.<br/><span>Not four side projects.</span></h2><p>Compute, storage, networking, and models designed together—with privacy and ownership at the center.</p></div><div className="systems-grid">{systems.map(({number,title,text,icon:Icon})=><article key={number}><div className="card-top"><span>{number}</span><Icon size={24} strokeWidth={1.5}/></div><h3>{title}</h3><p>{text}</p></article>)}</div></section>
     <section className="edge-section"><div className="edge-visual" aria-label="Edge appliance architecture"><div className="edge-label"><span>SWARM &amp; BEE / EDGE NODE</span><span>LOCAL INFERENCE APPLIANCE</span></div><div className="node-box"><div className="node-glow"/><span>SB–EDGE</span><strong>INTELLIGENCE<br/>WHERE DATA LIVES</strong><div className="node-ports"><i/><i/><i/><i/></div></div><div className="node-specs"><span><Cpu/> Compute</span><span><HardDrive/> Storage</span><span><Network/> Private network</span><span><ShieldCheck/> Local models</span></div></div><div className="edge-copy"><div className="section-kicker"><span>03</span> Edge appliances</div><h2>Put the model where the work happens.</h2><p>Purpose-built appliances combine GPU compute, fast local storage, secure networking, and private models in one deployable system.</p><ul><li>Local inference with predictable performance</li><li>Data ownership without unnecessary transit</li><li>Built for real workloads, not a demo shelf</li></ul></div></section>
-    <section className="doctrine" id="doctrine"><div className="section-kicker light"><span>04</span> The doctrine</div><blockquote>“Your data stays <em>yours.</em>”</blockquote><div className="doctrine-row"><p>Local-first storage. Private networks. Edge inference. The cloud is a tool—not the default owner of the relationship.</p><div><small>IDENTITY LAYER</small><strong>swarm&amp;bee</strong><span>ENS / decentralized identity</span></div></div></section>
-    <section className="final-cta"><p className="eyebrow"><span/> Systems that respect the data</p><h2>Build local.<br/>Compute <em>anywhere.</em></h2><a href="mailto:build@swarmandbee.ai">build@swarmandbee.ai <ArrowUpRight size={22}/></a></section>
-    <footer><span>© 2026 SWARM &amp; BEE</span><span>JUPITER, FLORIDA</span><span>SWARMANDBEE.AI</span></footer>
+    <section className="doctrine" id="doctrine"><div className="section-kicker light"><span>04</span> The doctrine</div><blockquote>“Your data stays <em>yours.</em>”</blockquote><div className="doctrine-row"><p>Local-first storage. Private networks. Edge inference. The model travels to the data, jobs finish in minutes—not days—and unnecessary data transit is designed out of the workflow.</p><div><small>VERIFIABLE IDENTITY</small><strong>swarm&amp;bee</strong><span>ENS identity · signed job receipts</span></div></div></section>
+    <section className="final-cta"><p className="eyebrow"><span/> Systems that respect the data</p><h2>Build local.<br/>Compute <em>anywhere.</em></h2><a href="mailto:build@swarmandbee.ai">build@swarmandbee.ai <ArrowUpRight size={22}/></a><a href="tel:+15615327120" aria-label="Call Swarm and Bee at 561-532-7120">561.532.7120</a></section>
+    <footer><span>© 2026 SWARM &amp; BEE</span><span>JUPITER, FLORIDA</span><a href="tel:+15615327120">561.532.7120</a><a href="https://huggingface.co/SwarmandBee" target="_blank" rel="noreferrer">HUGGING FACE</a></footer>
   </main>;
 }
